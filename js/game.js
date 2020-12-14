@@ -49,6 +49,9 @@ class Game{
                 textSize(25);
                 text(allPlayers[plr].name ,x-25,y+25);
             }
+            fill("white");
+            text(allPlayers["player1"].name + ":" + allPlayers["player1"].score,20,100);
+            text(allPlayers["player2"].name + ":" + allPlayers["player2"].score,20,150);
         }
         if (keyIsDown(RIGHT_ARROW) && player.index !== null) {
             player.distance -= 10
